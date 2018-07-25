@@ -297,6 +297,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/25/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/25/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -434,19 +444,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/cate/" itemprop="url" rel="index">
-                    <span itemprop="name">cate</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/cate/hehe/" itemprop="url" rel="index">
-                    <span itemprop="name">hehe</span>
+                  <a href="/categories/工作日志/" itemprop="url" rel="index">
+                    <span itemprop="name">工作日志</span>
                   </a>
                 </span>
 
@@ -457,6 +456,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/23/入职日志7-23/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/23/入职日志7-23/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -484,7 +493,14 @@
       
         
           
-            
+            <p>历时两周，经历完了公司培训、集团培训…太紧凑了…</p>
+<p>认识了很多新朋友，还有很多没听过的职业，实施？实施顾问？好好认知完估计是需要一段时间了。For a 没进过正规公司的职场小白，突然步入一间拥有强大后台且管理方面可谓黄埔军校的公司，说实话，是真的不适应，所在项目组已经有5个刚社招进来的，只有我一个是毕业生，某些无形的代沟让孤独感加倍啊…</p>
+<blockquote>
+<p>Anyway, Try My Best.</p>
+</blockquote>
+<p>涙气少传播，分享个戳中笑点的 <em>Dubbo</em> 官方文档截图。</p>
+<p><img src="/images/2018-7-25-1.jpg" alt="only want zookeeper"></p>
+
           
         
       
@@ -580,7 +596,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -819,26 +835,30 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-      <style>
-        a.gitment-editor-footer-tip { display: none; }
-        .gitment-container.gitment-footer-container { display: none; }
-      </style>
-    
-
-    
 
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '9ktHQWw0M73n7lOYs4hfe620-gzGzoHsz',
+        appKey: 'ocKtpvguTvc9K7GTtsuQk81l',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
